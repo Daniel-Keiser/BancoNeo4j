@@ -14,7 +14,9 @@ Caso não instale o uvicorn rode: pip install "uvicorn[standard]"
 Para rodar o banco indico baixar o Neo4j verção desktop. 
 https://neo4j.com/download/
 
-Essas são as bibliotecas importadas no projeto.
+Essas são as bibliotecas importadas no projeto:
+GraphDatabase da neo4j.
+
 Em seguida rode: uvicorn main:app --reload
 Tem um pequeno dump da db junto ao arquivos.
 
