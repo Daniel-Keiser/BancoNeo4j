@@ -2,7 +2,7 @@
 Part 2 do Trabalho de Banco 2 
 Instalação do FastAPI:
 
-* Indico de rodar a aplicação dentro de um ambiente virtual que rode as instalações em um ambiente diferente aos programas do computador.
+* Indico de rodar a aplicação dentro de um ambiente virtual que contenha as instalações em um ambiente diferente aos programas do computador.
 
 -> python -m venv venv
 -> para ativar é source {nome_venv}/bin/activate
@@ -11,11 +11,14 @@ Instalação do FastAPI:
 * Em seguida rode: pip install "fastapi[all]"
 Caso não instale o uvicorn rode: pip install "uvicorn[standard]"
 
-Para rodar o banco indico baixar o Neo4j verção desktop. 
+Para rodar o banco indico baixar o Neo4j versão desktop. 
 https://neo4j.com/download/
 
 Essas são as bibliotecas importadas no projeto:
 GraphDatabase da neo4j.
+
+Dumb da db:
+Foi fornecido um dumb da db o qual pode ser restaurado na interface  do neo4j.
 
 Em seguida rode: uvicorn main:app --reload
 Tem um pequeno dump da db junto ao arquivos.
@@ -34,8 +37,7 @@ porta padrão é 5173 sendo: localhost:5173
 
 não foi importado bibliotecas externas.
 
-Dumb da db:
-Foi fornecido um dumb da db o qual pode ser rodado em neo4j.
+
 
 
 
