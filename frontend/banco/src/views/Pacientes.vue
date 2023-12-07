@@ -42,7 +42,7 @@ export default {
     async savePatient(patient) {
       console.log('chegando')
       try {
-        const response = await fetch(`http://localhost:8000/patients/${patient.id}`, {
+        const response = await fetch(`http://localhost:8000/patients/${patient.patient_id}`, {
           method: 'PATCH',
           headers: {
             'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ export default {
     },
     async deletePatient(patient) {
       try {
-        const response = await fetch(`http://localhost:8000/patients/${patient}`, {
+        const response = await fetch(`http://localhost:8000/patients/${patient.patient_id}`, {
           method: 'DELETE',
         });
         if (response.ok) {

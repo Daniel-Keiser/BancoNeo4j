@@ -58,6 +58,7 @@ export default {
             appointment_datetime: appointment.appointment_datetime,
             status_id: appointment.status_id,
             observations: appointment.observations,
+            
             duration: appointment.duration,
           }),
         });
